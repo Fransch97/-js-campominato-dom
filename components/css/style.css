@@ -1,0 +1,153 @@
+body{
+    background-color: #533566;
+}
+/* GENERAL  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%; 
+    min-height: 45px;
+    min-width: 45px;
+}
+/*END GENERAL  */
+
+
+
+/* HEADER  */
+nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 40%;
+}
+#logo{
+    width: 130px;
+}
+
+button, select{
+    padding: 5px 9px;
+}
+/*END HEADER  */
+
+
+
+/* MAIN  */
+main{
+    height: calc(100vh - 135px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.xl{
+    border: 2px solid white;
+    height: 90%;
+    min-height: 455px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cubo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold
+}
+.cubo.small{
+    border: 3px solid forestgreen;
+    height: calc(100% / 7);
+    width: calc(100% / 7);
+}
+.cubo.mid{
+    border: 3px solid forestgreen;
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+.cubo.xl{
+    border: 3px solid forestgreen;
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+.clicked.even{
+    background-color: greenyellow;
+}
+.clicked.odd{
+    background-color: red;
+}
+.odd:focus{
+    background-color: green;
+}
+.even:focus{
+    background-color: green;
+}
+span{
+    display: none;
+}
+.cubo.clicked span{
+    display: block;
+}
+/*END MAIN  */
+
+/* FOOTER  */
+footer{
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#heart{
+    color: red;
+    display: inline-block;
+    font-size: 35px;
+}
+.lose{
+    background-color: rgba(0, 0, 0, 0.104);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    color:aliceblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lose h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    transition: 5s;
+}
+/*END FOOTER  */
+/* // const bana = this.className
+// if(!bana.includes("even")){
+    // wincounter+= 1;
+    // cube.classList.add("even");
+    // console.log(wincounter)
+// } */
